@@ -17,7 +17,7 @@ class HomeController extends Controller
         return view('frontend.home.home');
     }
     public function user_form(){
-        return view('frontend.home.payment');
+        return view('frontend.home.buycourse');
     }
 
     public function buy_course(Request $request)
@@ -39,9 +39,12 @@ class HomeController extends Controller
          $User_model->save();        
          $data = array(
             'order_id' => $orderId,
-            'amount' => $amount
+            'amount' => $amount,
+            'name' => $name,
+            'username' => $username,
+            'phone' => $phone,
         );
-        return redirect::to('buy-course')->with('data', $data);
+        return redirect::to('buy-video-course')->with('data', $data);
     }
 
     public function pay_check(Request $request){
@@ -79,6 +82,15 @@ class HomeController extends Controller
     }
     public function error(){
         return view('frontend.home.error');
+    }
+    public function user_video_course(){
+        return view('frontend.home.paycourse');
+    }
+    public function about(){
+        return view('frontend.home.about');
+    }
+    public function terms(){
+        return view('frontend.home.terms');
     }
 
 

@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-    <title>Grad School HTML5 Template</title>
+    <title>VIdeo Course - CK Tech education</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{{URL('vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
@@ -38,18 +38,13 @@
     <nav id="menu" class="main-nav" role="navigation">
       <ul class="main-menu">
         <li><a href="#section1">Home</a></li>
-        <li class="has-submenu"><a href="#section2">About Us</a>
-          <ul class="sub-menu">
-            <li><a href="#section2">Who we are?</a></li>
-            <li><a href="#section3">What we do?</a></li>
-            <li><a href="#section3">How it works?</a></li>
-            <li><a href="https://templatemo.com/about" rel="sponsored" class="external">External URL</a></li>
-          </ul>
-        </li>
+        {{-- <li><a target="_blank" href="{{URL::to('/about')}}">About Us</a></li> --}}
+        <li><a target="_blank" href="{{URL::to('/about')}}" class="external">About Us</a></li>
+
         <li><a href="#section4">Courses</a></li>
         <!-- <li><a href="#section5">Video</a></li> -->
         <li><a href="#section6">Contact</a></li>
-        <li><a href="https://templatemo.com" class="external">External</a></li>
+        <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100091263692934&mibextid=ZbWKwL" class="external">External</a></li>
       </ul>
     </nav>
   </header>
@@ -57,7 +52,7 @@
   <!-- ***** Main Banner Area Start ***** -->
   <section class="section main-banner" id="top" data-section="section1">
       <video autoplay muted loop id="bg-video">
-          <source src="{{URL('frontend/images/course-video.mp4')}}" type="video/mp4" />
+          <source src="{{URL('frontend/images/landing.mp4')}}" type="video/mp4" />
       </video>
 
       <div class="video-overlay header-text">
@@ -189,7 +184,7 @@
         <div class="col-md-7 col-xs-12">
           <div class="continer centerIt">
             <div>
-              <h4>Take <em>any online course</em> and win $326 for your next class</h4>
+              <h4>Take <em>any online course</em> and win Rs 1499 for your next class</h4>
               <div class="counter">
 
                 <div class="days">
@@ -416,18 +411,19 @@
           <div class="left-content">
             <span>our presentation is for you</span>
             <h4>Watch the video to learn more <em>about Ck Tech</em></h4>
-            <p>You are NOT allowed to redistribute this template ZIP file on any template collection website. However, you can use this template to convert into a specific theme for any kind of CMS platform such as WordPress. You may <a rel="nofollow" href="https://templatemo.com/contact" target="_parent">contact TemplateMo</a> for details.
-            <br><br>Suspendisse tincidunt, magna ut finibus rutrum, libero dolor euismod odio, nec interdum quam felis non ante.</p>
-            <div class="main-button"><a rel="nofollow" href="https://fb.com/templatemo" target="_parent">External URL</a></div>
+            <p>>We offer a variety of courses on our website to help you develop your skills and achieve your goals. Here are some of our course descriptions.
+            <br><br>In this course, you will learn how to create stunning visual designs using industry-standard software such as Adobe Photoshop and Illustrator. You will learn about design principles, color theory, and typography.</p>
+            <div class="main-button"><a rel="nofollow" href="https://www.facebook.com/profile.php?id=100091263692934&mibextid=ZbWKwL" target="_parent">External URL</a></div>
           </div>
         </div>
         <div class="col-md-6">
           <article class="video-item">
             <div class="video-caption">
-              <h4>Power HTML Template</h4>
+              <h4>Power of Video Editing</h4>
             </div>
             <figure>
-              <a href="https://www.youtube.com/watch?v=r9LtOG6pNUw" class="play"><img src="{{URL('frontend/images/main-thumb.png')}}"></a>
+              <a href="#" class="play"><img src="{{URL('frontend/images/main-thumb.png')}}"></a>
+             
             </figure>
           </article>
         </div>
@@ -446,9 +442,6 @@
         <div class="col-md-6">
 
         <!-- Do you need a working HTML contact-form script?
-
-                    Please visit https://templatemo.com/contact page -->
-
           <form id="contact" action="" method="post">
             <div class="row">
               <div class="col-md-6">
@@ -489,13 +482,12 @@
         <div class="col-md-12">
           <p><i class="fa fa-copyright"></i> Copyright 2020 by Ck Tech
 
-           | Design: <a href="https://templatemo.com" rel="sponsored" target="_parent">TemplateMo</a></p>
         </div>
       </div>
     </div>
   </footer>
 
-  <!-- Scripts -->
+  Scripts -->
   <!-- Bootstrap core JavaScript -->
     <script src="{{URL('vendor/jquery/jquery.min.js')}}"></script>
     <script src="{{URL('vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
